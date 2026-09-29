@@ -1,0 +1,94 @@
+.app {
+	min-height: 100vh;
+	padding: 24px 28px;
+	box-sizing: border-box;
+	color: #111;
+	background: #fff;
+}
+
+.exercise {
+	display: grid;
+	grid-template-columns: minmax(250px, 42%) 1fr;
+	min-height: 135px;
+	border-bottom: 1px solid #9ca3af;
+}
+
+.exercise-label {
+	padding-top: 2px;
+	font-size: 21px;
+	line-height: 1.35;
+}
+
+.exercise-label span {
+	display: block;
+}
+
+.text-color-demo {
+	padding-left: 8px;
+}
+
+.text-color-demo h1 {
+	margin: -4px 0 30px;
+	font-size: 22px;
+	line-height: 1;
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.controls input[type='text'] {
+	width: 232px;
+	height: 32px;
+	padding: 2px 5px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.controls input[type='color'] {
+	width: 90px;
+	height: 46px;
+	padding: 6px;
+}
+
+.counter-exercise {
+	min-height: 155px;
+	border-bottom: 0;
+}
+
+.counter-demo {
+	padding: 18px 8px;
+}
+
+.counter-demo strong {
+	display: block;
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+.counter-buttons {
+	display: flex;
+	gap: 6px;
+}
+
+.counter-buttons button {
+	padding: 3px 8px;
+	font-size: 18px;
+}
+
+@media (max-width: 700px) {
+	.exercise {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding-bottom: 24px;
+	}
+
+	.text-color-demo,
+	.counter-demo {
+		padding-left: 0;
+	}
+}
